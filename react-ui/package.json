@@ -4,6 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "npm run clean && webpack --mode production",
+    "clean": "rimraf build",
+    "start": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
