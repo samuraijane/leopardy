@@ -1,2 +1,1 @@
 # leopardy
-hi
