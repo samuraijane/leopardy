@@ -1,4 +1,4 @@
-SELECT 'CREATE DATABASE jeopardy' WHERE NOT EXIST (SELECT FROM pg_database WHERE datname = 'jeopardy')\gexec
+SELECT 'CREATE DATABASE leopardy' WHERE NOT EXIST (SELECT FROM pg_database WHERE datname = 'jeopardy')\gexec
 
 \c jeopardy
 
@@ -13,7 +13,7 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (id, email, first_name, last_name, username, avatar, password)
-VALUES (1, 'henry@gmail.com', 'Henry', 'Martinez', '1234') 
+VALUES (1, 'henry@gmail.com', 'Henry', 'Martinez', 'Henry', 'https://api.dicebear.com/6.x/pixel-art/svg' '1234') 
 
 
 SELECT * FROM users;
