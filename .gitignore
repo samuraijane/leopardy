@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 node_modules
 .vscode
 .env
-=======
-.env
-node_modules
->>>>>>> a40e2a7 (create sign up component)
