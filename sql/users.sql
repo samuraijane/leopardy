@@ -17,3 +17,4 @@ VALUES (1, 'henry@gmail.com', 'Henry', 'Martinez', 'Henry', 'https://api.dicebea
 
 
 SELECT * FROM users;
+
