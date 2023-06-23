@@ -11,9 +11,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/samuraijane/leopardy/issues"
-  },
   "homepage": "https://github.com/samuraijane/leopardy#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
