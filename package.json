@@ -8,6 +8,10 @@
     "start": "node server.js",
     "dev": "nodemon server/server/js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraijane/leopardy.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,5 +26,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/samuraijane/leopardy/issues"
+  },
+  "homepage": "https://github.com/samuraijane/leopardy#readme"
 }
