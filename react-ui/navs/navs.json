@@ -43,6 +43,11 @@
       "href": "/play",
       "id": 109,
       "name": "Play"
+    },
+    {
+      "href": "/support",
+      "id": 110,
+      "name": "Support"
     }
     
   ]

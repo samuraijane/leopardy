@@ -8,5 +8,6 @@ import Rules from './rules'
 import CreateGame from "./create-game";
 import Error from "./error";
 import PlayGame from "./play-game";
+import Support from "./support"
 
-export { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame};
+export { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame, Support};
