@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
 
-function App() {
+function Support() {
   const [fields, setFields] = useState({
     username: "",
     description: "",
@@ -25,8 +24,8 @@ function App() {
   const handleChange = (e) => {
     const key = e.target.name;
     const { value } = e.target;
-    if (value.length > 500) return
-    
+    if (value.length > 500) return;
+
     const _fields = { ...fields };
     _fields[key] = value;
     setFields(_fields);
@@ -106,4 +105,4 @@ function App() {
   );
 }
 
-export default App;
+export default Support;
