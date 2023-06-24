@@ -1,8 +1,34 @@
 //----------------------------------------------------------------------------
 //  body, html
 //----------------------------------------------------------------------------
+
 body,
 html {
   height: 100%;
   @include _bodyFont();
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  padding: 15px 0;
+}
+
+header {
+  background-color: lightgrey;
+  padding: 10px 0;
+}
+
