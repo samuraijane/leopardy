@@ -26,13 +26,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-<<<<<<< HEAD
   },
   "bugs": {
     "url": "https://github.com/samuraijane/leopardy/issues"
   },
   "homepage": "https://github.com/samuraijane/leopardy#readme"
-=======
-  }
->>>>>>> 6187e2d (heartbeat route made and server functional (#25))
 }
