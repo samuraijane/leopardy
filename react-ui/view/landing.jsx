@@ -1,8 +1,9 @@
 import React from 'react'
+import  SearchBar from "../components/search-bar/search-bar"
 
 const Landing = () => {
     return (
-      <h1> Home Page </h1>
+      <SearchBar />
     )
   };
   
