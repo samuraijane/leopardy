@@ -4,8 +4,6 @@ const SearchBar = () => {
 
     const [query, setQuery] = useState(" ") 
 
-    console.log(query)
-
     function searchButton() {
         setQuery(query)
     }
