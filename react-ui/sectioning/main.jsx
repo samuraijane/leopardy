@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame} from '../view';
+import { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame, Support} from '../view'
 
 const Main = () => {
   return (
@@ -15,6 +15,7 @@ const Main = () => {
         <Route path="/rules" element={<Rules />} />
         <Route path="/create-game" element={<CreateGame />} />
         <Route path="/play" element={<PlayGame />} />
+        <Route path='/support' element={<Support />} />
         <Route path="*" element={<Error />} />
     </Routes>
   </main>
