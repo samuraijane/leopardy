@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import LeadInProps from "./Leadinprops"
 
-const LeadIn: React.FC = () => {
+
+export interface LeadInPropsType { // this type is an interface the shape of props that Leadin expects
+  leadTitle?: string; // why ? // check things checker
+  leadDescription?: string;
+  startGame?: () => void;
+  isGameRunning?: boolean;
+}
+
+const LeadIn = () => { 
   
   const [isGameRunning, setGameRunning] = useState(false);
 
-  const startGame = (): void => {
+  const startGame = (): void => { // doesnt return just does an action so we use the void type in typescript which means the absence of aby since it is not returining anything  
     setGameRunning(true);
     console.log(" Ready to Play? Game has started!");
   };
