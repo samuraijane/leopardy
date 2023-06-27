@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
 function Support() {
-  const [fields, setFields] = useState({
+  const [fields, setFields] = useState<{
+    username: string;
+    description: string;
+  }>({
     username: "",
     description: "",
   });
   const [isValid, setIsValid] = useState(false);
-  const REGEX = /[a-zA-Z0-9]+$/;
+  const REGEX: RegExp = /[a-zA-Z0-9]+$/;
 
   useEffect(() => {
     if (!fields.username.match(REGEX) && fields.username !== "") {
@@ -16,22 +20,36 @@ function Support() {
     return () => setIsValid(false);
   }, [fields]);
 
-  const placeHolders = {
+  interface PlaceHolders {
+    username: string;
+    area: string;
+  }
+
+  const placeHolders: PlaceHolders = {
     username: "Username",
     area: "Description",
   };
 
-  const handleChange = (e) => {
-    const key = e.target.name;
-    const { value } = e.target;
+  const handleUsernameChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    const { value } = event.target;
     if (value.length > 500) return;
-
     const _fields = { ...fields };
-    _fields[key] = value;
+    _fields.username = value;
+    setFields(_fields);
+  };
+  const handleDescriptionChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ): void => {
+    const { value } = event.target;
+    if (value.length > 500) return;
+    const _fields = { ...fields };
+    _fields.description = value;
     setFields(_fields);
   };
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
     if (isValid || fields.username === "" || fields.description === "") {
       setIsValid(true);
@@ -66,24 +84,23 @@ function Support() {
                     className={`support__wrapper--username ${
                       isValid ? "invalid" : ""
                     }`}
-                    onChange={handleChange}
+                    onChange={handleUsernameChange}
                   ></input>
                 </div>
                 <div>
                   <textarea
-                    type="text"
                     name="description"
                     id="description"
                     className="support__wrapper--description"
                     value={fields.description}
                     placeholder={placeHolders.area}
-                    onChange={handleChange}
+                    onChange={handleDescriptionChange}
                   ></textarea>
                 </div>
                 <div className="support__wrapper--container">
                   <span>
                     {fields.description.length}
-                    <span>/500</span>
+                    <span> /500</span>
                   </span>
                 </div>
                 {isValid && (
