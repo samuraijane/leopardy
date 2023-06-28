@@ -9,7 +9,6 @@
     "dev": "nodemon server/server/js",
     "dbcreate": "psql -U postgres -f ./sql/users.sql",
     "drop": "psql -U postgres -f ./sql/dropDb.sql"
-    "dev": "nodemon server/server/js"
   },
   "repository": {
     "type": "git",

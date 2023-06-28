@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import React from "react";
 import { Footer, Header, Main } from '../sectioning';
->>>>>>> remotes/origin/development
 
 const App = (): JSX.Element => {
 
