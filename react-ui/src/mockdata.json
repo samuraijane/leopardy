@@ -10,6 +10,35 @@
           "questions": [
             {
               "id": "1-1-1",
+<<<<<<< HEAD
+              "question": "Which famous rock and roll artist released the hit song \"Rock Around the Clock\" in 1954?",
+              "level": "easy",
+              "answer": "Bill Haley & His Comets"
+            },
+            {
+              "id": "1-1-2",
+              "question": "Which historic Supreme Court case declared racial segregation in public schools unconstitutional?",
+              "level": "medium",
+              "answer": "Brown v. Board of Education"
+            },
+            {
+              "id": "1-1-3",
+              "question": "Who was the leader of the Soviet Union during the majority of the 1950s?",
+              "level": "easy",
+              "answer": "Nikita Khrushchev"
+            },
+            {
+              "id": "1-1-4",
+              "question": "Which popular television show premiered in 1951 and featured Lucille Ball?",
+              "level": "medium",
+              "answer": "I Love Lucy"
+            },
+            {
+              "id": "1-1-5",
+              "question": "What was the name of the famous bus boycott that took place in Montgomery, Alabama, in 1955?",
+              "level": "hard",
+              "answer": "Montgomery Bus Boycott"
+=======
               "question": "The famous rock and roll artist released the hit song \"Rock Around the Clock\" in 1954?",
               "level": "easy",
               "answer": "Who is Bill Haley & His Comets?"
@@ -37,6 +66,7 @@
               "question": "The name of the famous bus boycott that took place in Montgomery, Alabama, in 1955 was?",
               "level": "hard",
               "answer": "What is Montgomery Bus Boycott?"
+>>>>>>> remotes/origin/development
             }
           ]
         },
@@ -46,6 +76,35 @@
           "questions": [
             {
               "id": "2-2-1",
+<<<<<<< HEAD
+              "question": "Who won the Best Picture at the Academy Awards in 1960?",
+              "level": "easy",
+              "answer": "The Apartment"
+            },
+            {
+              "id": "2-2-2",
+              "question": "What was the name of the military conflict that the United States was involved in during the 1960s and 1970s?",
+              "level": "hard",
+              "answer": "Vietnam War"
+            },
+            {
+              "id": "2-2-3",
+              "question": "Who was the first man to walk on the moon?",
+              "level": "easy",
+              "answer": "Neil Armstrong"
+            },
+            {
+              "id": "2-2-4",
+              "question": "Which famous music festival took place in upstate New York in 1969?",
+              "level": "medium",
+              "answer": "Woodstock"
+            },
+            {
+              "id": "2-2-5",
+              "question": "Which political leader was assassinated in Dallas, Texas, in 1963?",
+              "level": "medium",
+              "answer": "John F. Kennedy"
+=======
               "question": "The winner of the Best Picture at the Academy Awards in 1960 is ",
               "level": "easy",
               "answer": "What is The Apartment?"
@@ -73,6 +132,7 @@
               "question": "This political leader was assassinated in Dallas, Texas, in 1963?",
               "level": "medium",
               "answer": "Who is John F. Kennedy?"
+>>>>>>> remotes/origin/development
             }
           ]
         },
@@ -82,6 +142,35 @@
           "questions": [
             {
               "id": "3-3-1",
+<<<<<<< HEAD
+              "question": "Which actor played the iconic character Rocky Balboa in the film \"Rocky\" released in 1976?",
+              "level": "easy",
+              "answer": "Sylvester Stallone"
+            },
+            {
+              "id": "3-3-2",
+              "question": "What was the highest-grossing film of the 1970s?",
+              "level": "medium",
+              "answer": "Star Wars"
+            },
+            {
+              "id": "3-3-3",
+              "question": "Which American president resigned from office in 1974?",
+              "level": "medium",
+              "answer": "Richard Nixon"
+            },
+            {
+              "id": "3-3-4",
+              "question": "Which American serial killer terrorized California in the late 1960s and early 1970s?",
+              "level": "hard",
+              "answer": "The Zodiac Killer"
+            },
+            {
+              "id": "3-3-5",
+              "question": "Which disco hit by the Bee Gees was featured in the film \"Saturday Night Fever\" released in 1977?",
+              "level": "easy",
+              "answer": "Stayin' Alive"
+=======
               "question": "This actor played the iconic character Rocky Balboa in the film \"Rocky\" released in 1976?",
               "level": "easy",
               "answer": "Who is Sylvester Stallone?"
@@ -109,6 +198,7 @@
               "question": "This disco hit by the Bee Gees was featured in the film \"Saturday Night Fever\" released in 1977?",
               "level": "easy",
               "answer": "What is Stayin' Alive?"
+>>>>>>> remotes/origin/development
             }
           ]
         },
@@ -118,6 +208,35 @@
           "questions": [
             {
               "id": "4-4-1",
+<<<<<<< HEAD
+              "question": "Who was the first female British Prime Minister?",
+              "level": "easy",
+              "answer": "Margaret Thatcher"
+            },
+            {
+              "id": "4-4-2",
+              "question": "Which iconic handheld gaming device was released by Nintendo in 1989?",
+              "level": "easy",
+              "answer": "Game Boy"
+            },
+            {
+              "id": "4-4-3",
+              "question": "What was the highest-grossing film of the 1980s?",
+              "level": "medium",
+              "answer": "E.T. the Extra-Terrestrial"
+            },
+            {
+              "id": "4-4-4",
+              "question": "Which famous album by Michael Jackson was released in 1982?",
+              "level": "medium",
+              "answer": "Thriller"
+            },
+            {
+              "id": "4-4-5",
+              "question": "What was the popular dance style that emerged in the 1980s known for its robotic movements?",
+              "level": "hard",
+              "answer": "Breakdancing"
+=======
               "question": "The first female British Prime Minister was?",
               "level": "easy",
               "answer": "Who is Margaret Thatcher?"
@@ -145,6 +264,7 @@
               "question": "This popular dance style that emerged in the 1980s is known for its robotic movements?",
               "level": "hard",
               "answer": "What is Breakdancing?"
+>>>>>>> remotes/origin/development
             }
           ]
         },
@@ -154,6 +274,35 @@
           "questions": [
             {
               "id": "5-5-1",
+<<<<<<< HEAD
+              "question": "Which popular sitcom featured six friends living in New York City?",
+              "level": "easy",
+              "answer": "Friends"
+            },
+            {
+              "id": "5-5-2",
+              "question": "Which female artist released the hit song \"Baby One More Time\" in 1998?",
+              "level": "easy",
+              "answer": "Britney Spears"
+            },
+            {
+              "id": "5-5-3",
+              "question": "What was the name of the highest-grossing animated film of the 1990s?",
+              "level": "medium",
+              "answer": "The Lion King"
+            },
+            {
+              "id": "5-5-4",
+              "question": "Which American president signed the North American Free Trade Agreement (NAFTA) into law in 1993?",
+              "level": "medium",
+              "answer": "Bill Clinton"
+            },
+            {
+              "id": "5-5-5",
+              "question": "What was the name of the conflict between Iraq and a coalition led by the United States in the early 1990s?",
+              "level": "hard",
+              "answer": "Gulf War"
+=======
               "question": " This popular sitcom featured six friends living in New York City?",
               "level": "easy",
               "answer": "What is Friends?"
@@ -181,6 +330,7 @@
               "question": "The conflict between Iraq and a coalition led by the United States in the early 1990s is?",
               "level": "hard",
               "answer": "What is the Gulf War?"
+>>>>>>> remotes/origin/development
             }
           ]
         },
@@ -190,6 +340,35 @@
           "questions": [
             {
               "id": "6-6-1",
+<<<<<<< HEAD
+              "question": "Which social media platform was founded by Mark Zuckerberg in 2004?",
+              "level": "easy",
+              "answer": "Facebook"
+            },
+            {
+              "id": "6-6-2",
+              "question": "What was the name of the first smartphone released by Apple in 2007?",
+              "level": "medium",
+              "answer": "iPhone"
+            },
+            {
+              "id": "6-6-3",
+              "question": "Who won the Academy Award for Best Actor for his role in the film \"Ray\" released in 2004?",
+              "level": "medium",
+              "answer": "Jamie Foxx"
+            },
+            {
+              "id": "6-6-4",
+              "question": "Which country hosted the 2008 Summer Olympics?",
+              "level": "easy",
+              "answer": "China"
+            },
+            {
+              "id": "6-6-5",
+              "question": "Which catastrophic hurricane struck the Gulf Coast of the United States in 2005?",
+              "level": "hard",
+              "answer": "Hurricane Katrina"
+=======
               "question": "This social media platform was founded by Mark Zuckerberg in 2004?",
               "level": "easy",
               "answer": "What is Facebook?"
@@ -217,6 +396,7 @@
               "question": "This catastrophic hurricane struck the Gulf Coast of the United States in 2005?",
               "level": "hard",
               "answer": "What is Hurricane Katrina?"
+>>>>>>> remotes/origin/development
             }
           ]
         }

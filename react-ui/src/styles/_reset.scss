@@ -119,7 +119,7 @@ a:link {
 //----------------------------------------------------------------------------
 .cf:before,
 .cf:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .cf:after {
@@ -187,9 +187,9 @@ td img {
 //----------------------------------------------------------------------------
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type='button'],
+input[type='submit'],
+input[type='file'],
 button {
   cursor: pointer;
 }
@@ -200,7 +200,7 @@ textarea {
   margin: 0;
 }
 button,
-input[type="button"] {
+input[type='button'] {
   width: auto;
   overflow: visible;
 }
@@ -222,13 +222,13 @@ input,
 input:focus {
   outline: none;
 }
-.ie7 input[type="checkbox"] {
+.ie7 input[type='checkbox'] {
   vertical-align: baseline;
 }
-input[type="radio"] {
+input[type='radio'] {
   vertical-align: text-bottom;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: bottom;
 }
 textarea {
@@ -265,7 +265,7 @@ blockquote {
   quotes: none;
   &:after,
   &:before {
-    content: "";
+    content: '';
     content: none;
   }
 }
@@ -273,7 +273,7 @@ q {
   quotes: none;
   &:after,
   &:before {
-    content: "";
+    content: '';
     content: none;
   }
 }

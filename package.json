@@ -28,7 +28,8 @@
     "pg-promise": "^11.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.8"
   },
   "bugs": {
     "url": "https://github.com/samuraijane/leopardy/issues"
