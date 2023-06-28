@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame, Support} from '../view'
+import { AboutTeam, Landing, SignIn, SignUp, Feedback, Account, Rules, CreateGame, Error, PlayGame, Support} from '../view';
 
 const Main = () => {
   return (
