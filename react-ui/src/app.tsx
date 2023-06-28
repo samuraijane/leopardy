@@ -1,7 +1,13 @@
+import React from "react";
+import { Footer, Header, Main } from '../sectioning';
+
 const App = (): JSX.Element => {
+
   return (
     <>
-      Hello, React.
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 };
