@@ -1,11 +1,23 @@
 import React from 'react'
-import  SearchBar from "../components/search-bar/search-bar"
+import  SearchBar from "../components/search-bar/search-bar";
+import LeadIn from "../src/components/Leadin";
 
 const Landing = () => {
-    return (
-      <SearchBar />
-    )
+  const rowStyles = {
+    display: "flex",
+    justifyContent: "flex-end",
+    width: "100%",
   };
-  
-  export default Landing;
-  
+
+  return (
+    <>
+      <h1> Home Page </h1>
+      <SearchBar />
+      <div style={{ ...rowStyles }}>
+        <LeadIn />
+      </div>
+    </>
+  );
+};
+
+export default Landing;
