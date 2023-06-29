@@ -1,10 +1,5 @@
 [
     {
-      "href": "/",
-      "id": 101,
-      "name": "Landing"
-    },
-    {
       "href": "/sign-up",
       "id": 102,
       "name": "Sign-Up"

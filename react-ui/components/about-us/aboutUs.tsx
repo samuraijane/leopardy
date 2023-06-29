@@ -1,13 +1,5 @@
 import React from 'react'
-import Christina from "./christina-barron"
-import Matt from "./matthew-day"
-import Dez from "./dez"
-import Jordan from "./jordan"
-import Camila from "./camila"
-import Hodan from "./hodan"
-import John from "./john"
-import Maggie from "./maggie"
-import Luis from "./luis"
+import {Christina, Camila, Dez, Hodan, Matt, Jordan, John, Maggie, Luis } from './profiles/index'
 import styled from 'styled-components'
 
 const AboutUs = (): JSX.Element => {
