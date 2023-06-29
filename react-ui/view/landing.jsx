@@ -1,17 +1,5 @@
-<<<<<<< HEAD
 import React from 'react'
-import  SearchBar from "../components/search-bar/search-bar"
-
-const Landing = () => {
-    return (
-      <SearchBar />
-    )
-  };
-  
-  export default Landing;
-  
-=======
-import React from "react";
+import  SearchBar from "../components/search-bar/search-bar";
 import LeadIn from "../src/components/Leadin";
 
 const Landing = () => {
@@ -24,6 +12,7 @@ const Landing = () => {
   return (
     <>
       <h1> Home Page </h1>
+      <SearchBar />
       <div style={{ ...rowStyles }}>
         <LeadIn />
       </div>
@@ -32,4 +21,3 @@ const Landing = () => {
 };
 
 export default Landing;
->>>>>>> 547138c (add leanin in addition to leanin props, and fix merge)
