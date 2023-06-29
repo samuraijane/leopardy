@@ -43,13 +43,12 @@ const AboutDiv = styled.div`
 const AboutImg = styled.img`
     width: 120px;
     border-radius: 50%;
-    margin-bottom: -10px
 `
 const AboutName = styled.h2`
     margin-top: 40x;
     color: #fff;
     margin: 10px
-    margin-bottom: 0;
+    margin-bottom: 2px;
 `
 const AboutTitle = styled.p`
     color: #fff;
