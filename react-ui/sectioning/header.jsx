@@ -4,12 +4,13 @@ import data from "../navs/navs.json";
 import logo from "../navs/home.json";
 
 const Header = () => {
-  const home = logo.map(nav => <NavLink key={nav.href} to={nav.href}><img className="logo" src={nav.src} /> </NavLink>);
+  console.log(logo[0].src)
+  const home = logo.map(logo => <NavLink key={logo.href} to={logo.href}><img src={logo.src} /> </NavLink>);
   const navs = data.map(nav => <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>);
   
   return (
     <header>
-        <div className='y-wrap y-navs'>{home}{navs}</div>
+      <div className='y-wrap y-navs'>{home}{navs}</div>
     </header>
   )
 };
