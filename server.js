@@ -1,23 +1,15 @@
 require('dotenv').config()
 
 const cookieParser = require('cookie-parser')
-const sessions = require('express-session')
 const pgp = require('pg-promise')()
 const cors = require('cors')
 const bcrypt = require('bcrypt')
 const express = require('express')
-
 const server = express()
 
 const PORT = 8080
 
-const db = pgp({
-  host: 'localhost',
-  port: 5432,
-  database: 'leopardy',
-  user: 'postgres',
-  password: process.env.PASSWORD,
-})
+const db = pgp(process.env.URL)
 
 server.use(cors())
 server.use(express.json())
@@ -93,4 +85,6 @@ server.post('/signin', async (req, res) => {
   }
 })
 
-server.listen(PORT, () => console.log(`This server is running at PORT ${PORT}`))
+server.listen(PORT, () => {
+  console.log(`This server is running at PORT ${PORT}`)
+})
