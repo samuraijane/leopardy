@@ -20,6 +20,19 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <div className='imgCapContainer2'>
+          <div className='imgContainer'> 
+            <img className='img' src="https://www.weareteachers.com/wp-content/uploads/Managing-Large-Class-Sizes.png" alt="" />
+          
+          </div>
+          <div className='caption'>
+            <div className='text'>
+              <h1 className='heading'>Unleash Your Knowledge Potential through Interactive jeopardy-style Quizzes and Challenging Trivia</h1>
+              <div className='description'>Embark on a thrilling journey of knowledge exploration and assessment using our interactive jeopardy-style template. Create and share captivating games, or choose from our extensive database. Ignite curiosity and empower learning like never before</div>
+              <a className='button'>Create your own game</a>
+            </div>
+          </div>
+        </div>
     </Imgcap>
   )
 };
@@ -30,6 +43,10 @@ const Imgcap = styled.section`
   .imgCapContainer {
     display: flex;
     flex-direction: row;
+  }
+  .imgCapContainer2 {
+    display: flex;
+    flex-direction: row-reverse;;
   }
 
   .img {
