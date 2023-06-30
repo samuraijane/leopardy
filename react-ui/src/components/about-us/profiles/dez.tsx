@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import LinkedinIcon01 from '../../../public/icons/linkedin_icon_01.png';
-import GitHubIcon from '../../../public/icons/gitHub_icon.png'
-import MattPic from '../../../public/img/matthew_Day.jpg'
+import LinkedinIcon01 from '../../../../public/icons/linkedin_icon_01.png';
+import GitHubIcon from '../../../../public/icons/gitHub_icon.png'
+import DezPic from '../../../../public/img/dez_Bryan.png'
 import styled from 'styled-components';
 
-const Matt = (): JSX.Element => {
+const Dez = (): JSX.Element => {
 
     const [readMore, setReadMore] = useState(false);
     
-    const text = "I work very hard. I am passionate about problem-solving. I love to learn new things. "
+    const text = "I am a full-stack developer based out of Atlanta, GA. After graduating with my Bachelor of Arts from Oglethorpe University, I obtained my certification in full-stack web development at DigitalCrafts. Since graduating, I have been working as a TA at DigitalCrafts. As a TA, I assist in teaching the following tech stack: HTML, CSS, JavaScript, Bootstrap, Flexbox, React, Amplify, Python, Sequelize, PostgreSQL, Node.js, Express, and Redux."
 
     const ReadMoreLink = (event: React.MouseEvent) => {
         setReadMore(!readMore)
@@ -19,17 +19,17 @@ const Matt = (): JSX.Element => {
     return (
         <Container>
             <AboutDiv>
-                <AboutImg src={MattPic} alt="Matt's Profile Pic" />
-                <AboutName> Matthew Day </AboutName>
-                <AboutTitle> Instructor </AboutTitle>
+                <AboutImg src={DezPic} alt="Dez's Profile Pic" />
+                <AboutName> Dez Bryan </AboutName>
+                <AboutTitle> TA </AboutTitle>
                 <AboutP> 
                     {readMore ? text : `${text.substring(0, 250)}`}
                     <AboutButton onClick={ReadMoreLink}>{linkName}</AboutButton> 
                 </AboutP>
             </AboutDiv>
             <AboutIcons>
-                <a href="https://github.com/samuraijane" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
-                <a href="https://www.linkedin.com/in/daymatthew/ " target="_blank"> <IconImg src={LinkedinIcon01} alt="LinkedIn Icon Link" /> </a>
+                <a href="https://github.com/DezSays" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
+                <a href="https://www.linkedin.com/in/dezarea-bryan/" target="_blank"> <IconImg src={LinkedinIcon01} alt="LinkedIn Icon Link" /> </a>
             </AboutIcons>
         </Container>
     )
@@ -56,12 +56,14 @@ const AboutDiv = styled.div`
 const AboutImg = styled.img`
     width: 120px;
     border-radius: 50%;
+    margin-bottom: 2px;
 `
+
 const AboutName = styled.h2`
     margin-top: 40x;
     color: #fbed55;
     margin: 10px
-    margin-bottom: 2px;
+    margin-bottom: 0;
 `
 const AboutTitle = styled.p`
     color: #fff;
@@ -93,5 +95,5 @@ const IconImg = styled.img`
     width: 40px;
 `
 
-export default Matt;
+export default Dez;
 

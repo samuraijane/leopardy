@@ -1,35 +1,36 @@
 import React, { useState } from 'react';
-import LinkedinIcon from '../../../public/icons/linkedin_icon_01.png';
-import GitHubIcon from '../../../public/icons/gitHub_icon.png';
-import PortfolioIcon from '../../../public/icons/portfolio_icon_01.png';
-import MaggiePic from '../../../public/img/maggie_Benton.jpg';
+import LinkedinIcon from "../../../../public/icons/linkedin_icon_01.png"
+import GitHubIcon from '../../../../public/icons/gitHub_icon.png';
+import PortfolioIcon from '../../../../public/icons/portfolio_icon_01.png';
+import CamilaPic from "../../../../public/img/camila_Wilson.jpg"
 import styled from 'styled-components';
 
-const Maggie = (): JSX.Element => {
+const Camila = (): JSX.Element => {
 
     const [readMore, setReadMore] = useState(false);
     
-    const text = "My name is Maggie Benton. I recently developed a passion for coding and web development. I'm currently in school for web development and have a firm grasp on HTML, CSS, Vanilla JavaScript, SQL, PSQL, React and Redux/ I am looking to find a front end/full stack position. Both my coding and interpersonal skills position me to be a valuable team member and my drive is a guarantee of quality and timely production."
+    const text = " A passionate woman who loves to continue to learn new things and expand my horizons."
+
 
     const ReadMoreLink = (event: React.MouseEvent) => {
         setReadMore(!readMore)
     }
-    
-    const linkName = readMore ? 'Read Less << ': 'Read More >>'
+
+    const linkName = readMore ? 'Read Less << ': 'Read More >'
 
     return (
         <Container>
             <AboutDiv>
-                <AboutImg src={MaggiePic} alt="Maggie Benton's Profile Pic" />
-                <AboutName> Maggie Benton </AboutName>
+                <AboutImg src={CamilaPic} alt="Camila Wilson's Profile Pic" />
+                <AboutName> Camila Wilson</AboutName>
                 <AboutP> 
                     {readMore ? text : `${text.substring(0, 250)}`}
                     <AboutButton onClick={ReadMoreLink}>{linkName}</AboutButton> 
                 </AboutP>
             </AboutDiv>
             <AboutIcons>
-                <a href="https://github.com/Maggiejackss" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
-                <a href="https://www.linkedin.com/in/maggie-benton-471196268/" target="_blank"> <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
+                <a href="https://github.com/BuildBelleza" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
+                <a href="#" > <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
                 <a href="#" > <IconImg src={PortfolioIcon} alt="Portfolio Icon Link" /> </a>
             </AboutIcons>
         </Container>
@@ -89,4 +90,4 @@ const IconImg = styled.img`
     width: 40px;
 `
 
-export default Maggie;
+export default Camila;

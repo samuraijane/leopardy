@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header, Main } from '../sectioning';
+import { Footer, Header, Main } from './sectioning';
 
 const App = (): JSX.Element => {
 

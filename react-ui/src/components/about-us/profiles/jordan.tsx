@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import LinkedinIcon from '../../../public/icons/linkedin_icon_01.png';
-import GitHubIcon from '../../../public/icons/gitHub_icon.png';
-import PortfolioIcon from '../../../public/icons/portfolio_icon_01.png';
-import JordanPic from '../../../public/img/jordan_Couch.jpg';
+import LinkedinIcon from '../../../../public/icons/linkedin_icon_01.png';
+import GitHubIcon from '../../../../public/icons/gitHub_icon.png';
+import PortfolioIcon from '../../../../public/icons/portfolio_icon_01.png';
+import JordanPic from '../../../../public/img/jordan_Couch.jpg';
 import styled from 'styled-components';
 
 const Jordan = (): JSX.Element => {

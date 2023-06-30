@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
-import LinkedinIcon from "../../../public/icons/linkedin_icon_01.png"
-import GitHubIcon from '../../../public/icons/gitHub_icon.png';
-import PortfolioIcon from '../../../public/icons/portfolio_icon_01.png';
-import CamilaPic from '../../../public/img/camila_Wilson.jpg';
+import LinkedinIcon from '../../../../public/icons/linkedin_icon_01.png';
+import GitHubIcon from '../../../../public/icons/gitHub_icon.png';
+import PortfolioIcon from '../../../../public/icons/portfolio_icon_01.png';
+import HodanPic from '../../../../public/img/hodan_Suleiman.jpg';
 import styled from 'styled-components';
 
-const Camila = (): JSX.Element => {
+const Hodan = (): JSX.Element => {
 
     const [readMore, setReadMore] = useState(false);
     
-    const text = " A passionate woman who loves to continue to learn new things and expand my horizons."
-
+    const text = "Here's the about section on Hodan... she's awesome and knows how to code. "
 
     const ReadMoreLink = (event: React.MouseEvent) => {
         setReadMore(!readMore)
     }
+    
+    const linkName = readMore ? 'Read Less << ': 'Read More >>'
 
-    const linkName = readMore ? 'Read Less << ': 'Read More >'
 
     return (
         <Container>
             <AboutDiv>
-                <AboutImg src={CamilaPic} alt="Camila Wilson's Profile Pic" />
-                <AboutName> Camila Wilson</AboutName>
+                <AboutImg src={HodanPic} alt="Hodan Suleiman's Profile Pic" />
+                <AboutName> Hodan Suleiman </AboutName>
                 <AboutP> 
                     {readMore ? text : `${text.substring(0, 250)}`}
                     <AboutButton onClick={ReadMoreLink}>{linkName}</AboutButton> 
                 </AboutP>
             </AboutDiv>
             <AboutIcons>
-                <a href="https://github.com/BuildBelleza" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
-                <a href="#" > <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
+                <a href="https://github.com/hodansuleiman" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
+                <a href="https://www.linkedin.com/in/hodan-suleiman-054b1327b/" target="_blank"> <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
                 <a href="#" > <IconImg src={PortfolioIcon} alt="Portfolio Icon Link" /> </a>
             </AboutIcons>
         </Container>
@@ -71,6 +71,7 @@ const AboutButton = styled.button`
     font-weight: 600;
     margin: 5px 5px;
 `
+
 const AboutP = styled.p`
     padding: 20px;
     padding-top: 0;
@@ -90,4 +91,4 @@ const IconImg = styled.img`
     width: 40px;
 `
 
-export default Camila;
+export default Hodan;

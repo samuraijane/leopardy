@@ -1,15 +1,15 @@
-import React, { useState }from 'react';
-import LinkedinIcon from '../../../public/icons/linkedin_icon_01.png';
-import GitHubIcon from '../../../public/icons/gitHub_icon.png';
-import PortfolioIcon from '../../../public/icons/portfolio_icon_01.png';
-import JohnPic from '../../../public/img/john_Garcia.jpg';
+import React, { useState } from 'react';
+import LinkedinIcon from '../../../../public/icons/linkedin_icon_01.png';
+import GitHubIcon from '../../../../public/icons/gitHub_icon.png';
+import PortfolioIcon from '../../../../public/icons/portfolio_icon_01.png';
+import MaggiePic from '../../../../public/img/maggie_Benton.jpg';
 import styled from 'styled-components';
 
-const John = (): JSX.Element => {
+const Maggie = (): JSX.Element => {
 
     const [readMore, setReadMore] = useState(false);
     
-    const text = " I am currently studying in the Digital Craft Web Development Program. I am passionate about coding and love the challenge of solving complex problems. As a resident of Houston, TX, I am inspired by the city's vibrant tech community and am excited about the potential opportunities in the field. I am eager to continue learning and expanding my skills in web development, and I look forward to contributing to the ever-evolving world of technology."
+    const text = "My name is Maggie Benton. I recently developed a passion for coding and web development. I'm currently in school for web development and have a firm grasp on HTML, CSS, Vanilla JavaScript, SQL, PSQL, React and Redux/ I am looking to find a front end/full stack position. Both my coding and interpersonal skills position me to be a valuable team member and my drive is a guarantee of quality and timely production."
 
     const ReadMoreLink = (event: React.MouseEvent) => {
         setReadMore(!readMore)
@@ -20,16 +20,16 @@ const John = (): JSX.Element => {
     return (
         <Container>
             <AboutDiv>
-                <AboutImg src={JohnPic} alt="John Garcia's Profile Pic" />
-                <AboutName> John Garcia </AboutName>
+                <AboutImg src={MaggiePic} alt="Maggie Benton's Profile Pic" />
+                <AboutName> Maggie Benton </AboutName>
                 <AboutP> 
                     {readMore ? text : `${text.substring(0, 250)}`}
                     <AboutButton onClick={ReadMoreLink}>{linkName}</AboutButton> 
                 </AboutP>
             </AboutDiv>
             <AboutIcons>
-                <a href="https://github.com/jhongarcian" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
-                <a href="https://www.linkedin.com/in/john-edward-garcia-ba897b1b0/" target="_blank"> <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
+                <a href="https://github.com/Maggiejackss" target="_blank"> <IconImg src={GitHubIcon} alt="Github Icon Link" /> </a>
+                <a href="https://www.linkedin.com/in/maggie-benton-471196268/" target="_blank"> <IconImg src={LinkedinIcon} alt="LinkedIn Icon Link" /> </a>
                 <a href="#" > <IconImg src={PortfolioIcon} alt="Portfolio Icon Link" /> </a>
             </AboutIcons>
         </Container>
@@ -84,8 +84,9 @@ const AboutIcons = styled.a`
     gap: 10px;
     justify-content: center;
 `
+
 const IconImg = styled.img`
     width: 40px;
 `
 
-export default John;
+export default Maggie;
