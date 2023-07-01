@@ -21,11 +21,11 @@ server.get('/heartbeat', (req, res) => {
   res.json({ message: 'heartbeat' });
 });
 
-server.get('api/avatars', async (req, res) => {
-    const userInput = req.body;
-    const img = await fetch(`https://robohash.org/${userInput}?set=set3`);
-    res.json(img);
-})
+server.get('/api/avatars', async (req, res) => {
+  const userInput = req.body;
+  const img = await fetch(`https://robohash.org/${userInput}?set=set3`);
+  res.json(img);
+});
 
 server.get('/users', async (req, res) => {
   try {
@@ -103,6 +103,56 @@ server.get('*', (req, res) => {
   });
 
 
-server.listen(PORT, () => {
+server.get('/categories', async (req, res) => {
+  try {
+    const categories = await db.any('SELECT * FROM categories');
+    res.json(categories);
+  } catch (error) {
+    console.error('Error retrieving categories:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+server.post('/categories', async (req, res) => {
+  const { title } = req.body;
+
+  try {
+    const category = await db.one(
+      'INSERT INTO categories (title) VALUES ($1) RETURNING *',
+      title
+    );
+    res.json(category);
+  } catch (error) {
+    console.error('Error creating category:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+server.get('/questions', async (req, res) => {
+  try {
+    const questions = await db.any('SELECT * FROM questions');
+    res.json(questions);
+  } catch (error) {
+    console.error('Error retrieving questions:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+server.post('/questions', async (req, res) => {
+  const { category_id, difficulty, question, answer } = req.body;
+
+  try {
+    await db.none(
+      'INSERT INTO questions (category_id, difficulty, question, answer) VALUES ($1, $2, $3, $4)',
+      [category_id, difficulty, question, answer]
+    );
+    res.json({ message: 'Question created successfully' });
+  } catch (error) {
+    console.error('Error creating question:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
 });
