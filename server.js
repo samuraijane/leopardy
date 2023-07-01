@@ -85,7 +85,7 @@ server.post('/signin', async (req, res) => {
     if (!isPasswordValid) {
       return res.status(401).json({ error: 'Invalid username or password' });
     }
-    res.json({message:"heartbeat"})
+   
 
 server.get('*', (req, res) => {
     res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
