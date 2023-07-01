@@ -22,9 +22,13 @@ main {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
   background-color: darkgray;
   color: white;
   padding: 15px 0;
+  text-align: center;
 }
 
 header {
