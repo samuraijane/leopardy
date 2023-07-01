@@ -8,7 +8,8 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "dbcreate": "psql -U postgres -f ./sql/users.sql",
-    "drop": "psql -U postgres -f ./sql/dropDb.sql"
+    "drop": "psql -U postgres -f ./sql/dropDb.sql",
+    "build": "cd react-ui/ && npm install && npm run build"
   },
   "repository": {
     "type": "git",
