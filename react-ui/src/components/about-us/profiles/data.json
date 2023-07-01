@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Christina Barron",
+        "filename": "/christina_barron.jpg",
+        "title": "Developer",
+        "alt": "Christina Barron Profile Pic",
+        "text": "I am a graphic and website designer based out of San Diego, California. After graduating with my Bachelors of Science in Business Marketing specializing in Integrated Marketing Communications, I got a job in the non-profit sector designing and creating content. Since opening my own business, Christina Barron Designs, I have gained more work experience the design field and now have enrolled in Digital Crafts to further my education in Web Development learning HTML, CSS, CSS Flexbox, Bootstrap, JavaScript, Node.js, React, Redux, and Sequelize. My favorite place in San Diego is Kate Sessions park looking over the ocean.",
+        "github": "https://github.com/christinab980",
+        "linkedin": "https://www.linkedin.com/in/christina-barron-9446b2262/",
+        "profile": "https://christinabarronportfolio.netlify.app/"
+    },
+    {
+        "id": 2,
+        "name": "Camila Wilson",
+        "filename": "/public/img/camila_Wilson.jpg",
+        "title": "Developer",
+        "alt": "Camila Wilson's Profile Pic",
+        "text": "A passionate woman who loves to continue to learn new things and expand my horizons.",
+        "github": "https://github.com/BuildBelleza",
+        "linkedin": "https://www.linkedin.com/in/camillawilson33/",
+        "profile": "#"
+    },
+    {
+        "id": 3,
+        "name": "Maggie Benton",
+        "filename": "/img/maggie_Benton.jpg",
+        "title": "Developer",
+        "alt": "Maggie Benton's Profile Pic",
+        "text": "My name is Maggie Benton. I recently developed a passion for coding and web development. I'm currently in school for web development and have a firm grasp on HTML, CSS, Vanilla JavaScript, SQL, PSQL, React and Redux/ I am looking to find a front end/full stack position. Both my coding and interpersonal skills position me to be a valuable team member and my drive is a guarantee of quality and timely production.",
+        "github": "https://github.com/Maggiejackss",
+        "linkedin": "https://www.linkedin.com/in/maggie-benton-471196268/",
+        "profile": "#"
+    },
+    {
+        "id": 4,
+        "name": "Matthew Day",
+        "filename": "../../../../public/img/matthew_Day.jpg",
+        "title": "Instructor",
+        "alt": "Matthew Day's Profile Pic",
+        "text": "I work very hard. I am passionate about problem-solving. I love to learn new things.",
+        "github": "https://github.com/samuraijane",
+        "linkedin": "https://www.linkedin.com/in/daymatthew/",
+        "profile": "#"
+    },
+    {
+        "id": 5,
+        "name": "Dezarea Bryan",
+        "filename": "/dez_Bryan.jpg",
+        "title": "T.A.",
+        "alt": "Dez Bryan's Profile Pic",
+        "text": "I am a full-stack developer based out of Atlanta, GA. After graduating with my Bachelor of Arts from Oglethorpe University, I obtained my certification in full-stack web development at DigitalCrafts. Since graduating, I have been working as a TA at DigitalCrafts. As a TA, I assist in teaching the following tech stack: HTML, CSS, JavaScript, Bootstrap, Flexbox, React, Amplify, Python, Sequelize, PostgreSQL, Node.js, Express, and Redux.",
+        "github": "https://github.com/DezSays",
+        "linkedin": "https://www.linkedin.com/in/dezarea-bryan/",
+        "profile": "#"
+    }, 
+    {
+        "id": 6,
+        "name": "Luis Martinez",
+        "filename": "/luis_Martinez_01.png",
+        "title": "Developer",
+        "alt": "Luis Martinez's Profile Pic",
+        "text": "Hello, I'm Luis, however I prefer to go by Henry. I'm a passionate software developer seeking my first professional opportunity. With a strong foundation in computer science and proficiency in languages like Java, Html, CSS, React, and PSQL , I'm ready to contribute to an innovative team. I have practical experience working on projects, both individually and collaboratively, which sharpened my problem-solving abilities and attention to detail. Continuously learning and staying updated on industry trends, I'm eager to explore new technologies and frameworks to enhance my skills. I thrive in collaborative environments, valuing effective communication and teamwork. I bring an analytical mindset, creativity, and efficiency to problem-solving. I'm excited to join a company that shares my passion for creating innovative software solutions. As a dedicated and growth-oriented developer, I'm ready to contribute and learn in a positive work culture.",
+        "github": "https://github.com/Henryesc",
+        "linkedin": "https://www.linkedin.com/in/luis-martinez-3a5b41276/",
+        "profile": "#"
+    }, 
+    {
+        "id": 7,
+        "name": "Jordan Couch",
+        "filename": "/jordan_Couch.jpg",
+        "title": "Developer",
+        "alt": "Jordan Couch's Profile Pic",
+        "text": "Hey! I’m Jordan Couch. I'm thrilled to share a bit about myself as a front-end developer. I had the amazing opportunity to attend the highly acclaimed DigitalCrafts web development bootcamp, where I immersed myself in an intensive six-month program. Throughout this journey, I honed my front-end development skills and had the chance to work on real-world projects. DigitalCrafts provided me with a solid foundation in HTML, CSS, and JavaScript, as well as exposure to modern frameworks and libraries like React. I am passionate about crafting exceptional user experiences through clean and efficient code. I am now eagerly looking forward to leveraging my skills and making a meaningful impact in the industry. If you're interested in connecting or have any exciting opportunities there is a link to my portfolio at the bottom, let's connect!",
+        "github": "https://github.com/Henryesc",
+        "linkedin": "https://www.linkedin.com/in/luis-martinez-3a5b41276/",
+        "profile": "https://jayy2023.github.io/portfolio101/"
+    }, 
+    {
+        "id": 8,
+        "name": "Hodan Suleiman",
+        "filename": "/hodan_Suleiman.jpg",
+        "title": "Developer",
+        "alt": "Hodan Suleiman's Profile Pic",
+        "text": "This section is for Hodan. She's awesome and knows how to code.",
+        "github": "https://github.com/Henryesc",
+        "linkedin": "https://www.linkedin.com/in/luis-martinez-3a5b41276/",
+        "profile": "#"
+    }, 
+    {
+        "id": 9,
+        "name": "John Garcia",
+        "filename": "/john_Garcia.jpg",
+        "title": "Developer",
+        "alt": "John Garcia's Profile Pic",
+        "text": "I am currently studying in the Digital Craft Web Development Program. I am passionate about coding and love the challenge of solving complex problems. As a resident of Houston, TX, I am inspired by the city's vibrant tech community and am excited about the potential opportunities in the field. I am eager to continue learning and expanding my skills in web development, and I look forward to contributing to the ever-evolving world of technology.",
+        "github": "https://github.com/jhongarcian",
+        "linkedin": "https://www.linkedin.com/in/john-edward-garcia-ba897b1b0/",
+        "profile": "#"
+    }
+]

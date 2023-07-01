@@ -1,6 +1,6 @@
 import React from 'react'
-import {Christina, Camila, Dez, Hodan, Matt, Jordan, John, Maggie, Luis } from './profiles/index'
 import styled from 'styled-components'
+import Team from '../../components/about-us/profiles/index'
 
 const AboutUs = (): JSX.Element => {
 
@@ -11,15 +11,7 @@ const AboutUs = (): JSX.Element => {
             <p>This is a subheading about the project</p>
          </TitleText>
          <Profiles>
-            <Matt />
-            <Dez />
-            <Jordan />
-            <Christina />
-            <Camila />
-            <Hodan />
-            <John />
-            <Maggie />
-            <Luis />
+            <Team />
          </Profiles>
         </Container>
     )
