@@ -19,11 +19,11 @@ server.get('/heartbeat', (req, res) => {
   res.json({ message: 'heartbeat' });
 });
 
-server.get('api/avatars', async (req, res) => {
-    const userInput = req.body;
-    const img = await fetch(`https://robohash.org/${userInput}?set=set3`);
-    res.json(img);
-})
+server.get('/api/avatars', async (req, res) => {
+  const userInput = req.body;
+  const img = await fetch(`https://robohash.org/${userInput}?set=set3`);
+  res.json(img);
+});
 
 server.get('/users', async (req, res) => {
   try {
@@ -91,87 +91,57 @@ server.post('/signin', async (req, res) => {
   }
 });
 
-// ...
-
-// Insert sample data into categories and questions
-server.post('/sampledata', async (req, res) => {
-  try {
-    // Insert sample categories
-    const categories = [
-      {
-        title: 'Cat1',
-        questions: [
-          { difficulty: 100, question: 'q1', answer: 'a1' },
-          { difficulty: 200, question: 'q2', answer: 'a2' },
-          { difficulty: 300, question: 'q3', answer: 'a3' },
-          { difficulty: 400, question: 'q4', answer: 'a4' },
-          { difficulty: 500, question: 'q5', answer: 'a5' },
-        ],
-      },
-      // Add more sample categories here if needed
-    ];
-
-    for (const category of categories) {
-      // Insert the category
-      await db.none('INSERT INTO categories (title) VALUES ($1)', [category.title]);
-
-      // Insert the questions for the category
-      const categoryId = await db.one('SELECT id FROM categories WHERE title = $1', [category.title]);
-
-      for (const question of category.questions) {
-        await db.none(
-          'INSERT INTO questions (category_id, difficulty, question, answer) VALUES ($1, $2, $3, $4)',
-          [categoryId.id, question.difficulty, question.question, question.answer]
-        );
-      }
-    }
-
-    res.json({ message: 'Sample data inserted successfully' });
-  } catch (error) {
-    console.error('Error inserting sample data:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
-
-// Get all categories with their questions
 server.get('/categories', async (req, res) => {
   try {
-    const categories = await db.any(`
-      SELECT c.title AS category_title, q.difficulty, q.question, q.answer
-      FROM categories AS c
-      INNER JOIN questions AS q ON c.id = q.category_id
-      ORDER BY c.title, q.difficulty
-    `);
-
-    // Structure the data by categories
-    const formattedCategories = [];
-    let currentCategory = null;
-
-    for (const category of categories) {
-      if (category.category_title !== currentCategory) {
-        formattedCategories.push({ title: category.category_title, questions: [] });
-        currentCategory = category.category_title;
-      }
-
-      const formattedQuestion = {
-        difficulty: category.difficulty,
-        question: category.question,
-        answer: category.answer,
-      };
-
-      formattedCategories[formattedCategories.length - 1].questions.push(formattedQuestion);
-    }
-
-    res.json(formattedCategories);
+    const categories = await db.any('SELECT * FROM categories');
+    res.json(categories);
   } catch (error) {
     console.error('Error retrieving categories:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
-// ...
+server.post('/categories', async (req, res) => {
+  const { title } = req.body;
 
+  try {
+    const category = await db.one(
+      'INSERT INTO categories (title) VALUES ($1) RETURNING *',
+      title
+    );
+    res.json(category);
+  } catch (error) {
+    console.error('Error creating category:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
-server.listen(PORT, () => {
+server.get('/questions', async (req, res) => {
+  try {
+    const questions = await db.any('SELECT * FROM questions');
+    res.json(questions);
+  } catch (error) {
+    console.error('Error retrieving questions:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+server.post('/questions', async (req, res) => {
+  const { category_id, difficulty, question, answer } = req.body;
+
+  try {
+    await db.none(
+      'INSERT INTO questions (category_id, difficulty, question, answer) VALUES ($1, $2, $3, $4)',
+      [category_id, difficulty, question, answer]
+    );
+    res.json({ message: 'Question created successfully' });
+  } catch (error) {
+    console.error('Error creating question:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Start the server
+server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
 });
