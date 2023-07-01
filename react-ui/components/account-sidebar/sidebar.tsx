@@ -14,6 +14,7 @@ interface ViewsTypes {
 interface SidebarProps {
   action: (currentView: string) => void
   views: ViewsTypes
+  userData: UserTypes
 }
 interface GamesContainerProps {
   isActive: boolean
@@ -23,7 +24,18 @@ interface WrapperProps {
   isActive: boolean
 }
 
-const Sidebar: FC<SidebarProps> = ({ action, views }): JSX.Element => {
+interface SideBarProps {
+    isActive: boolean
+}
+
+interface UserTypes {
+    avatar: string
+    username: string
+    email: string
+    created_games: number
+  }
+
+const Sidebar: FC<SidebarProps> = ({ action, views, userData }): JSX.Element => {
   // Sidebar open
   const [isActive, setIsActive] = useState(false)
   const [currentView, setCurrentView] = useState('dashboard-view')
@@ -39,8 +51,10 @@ const Sidebar: FC<SidebarProps> = ({ action, views }): JSX.Element => {
     if (e.currentTarget instanceof HTMLElement) {
       const favorite = e.currentTarget.closest('[data-favorite]')
       const createdGames = e.currentTarget.closest('[data-created-games]')
+      const dashboard_view = e.currentTarget.closest('[data-dashboard]')
       createdGames && setCurrentView(viewsObject.created_games)
-      favorite && setCurrentView(views.favorite)
+      favorite && setCurrentView(viewsObject.favorite)
+      dashboard_view && setCurrentView(viewsObject.dashboard)
     }
   }
 
@@ -48,7 +62,7 @@ const Sidebar: FC<SidebarProps> = ({ action, views }): JSX.Element => {
 
   return (
     <Container>
-      <SideBar>
+      <SideBar isActive={isActive}>
         <Wrapper isActive={isActive}>
           <Hamburger
             duration={1}
@@ -60,8 +74,8 @@ const Sidebar: FC<SidebarProps> = ({ action, views }): JSX.Element => {
             toggle={setIsActive}
           />
         </Wrapper>
-        <Wrapper isActive={isActive}>
-          <Avatar image={'https://placekitten.com/200/300'} />
+        <Wrapper data-dashboard onClick={handleViewClick} isActive={isActive}>
+          <Avatar image={userData.avatar} />
         </Wrapper>
         <GamesContainer
           onClick={handleViewClick}
@@ -94,10 +108,12 @@ const Container = styled.div`
   height: 100%;
   background: #1e7faf;
   padding: 4px 8px;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 `
-const SideBar = styled.div`
-  width: 100%;
+const SideBar = styled.div<SideBarProps>`
+    min-width: 110px;
+  width: ${(props) => (props.isActive ? `160px;` : `100%;`)};
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,6 +136,8 @@ const TextGameStyled = styled.span`
   height: auto;
   text-transform: capitalize;
   font-size: 14px;
+  text-align: center;
+  width: 100%;
 `
 
 const FavoriteGameText = () => {
