@@ -15,6 +15,7 @@ const db = pgp(process.env.URL);
 server.use(cors());
 server.use(express.json());
 server.use(cookieParser());
+server.use(express.static(path.resolve(`${__dirname}/react-ui/build`)));
 
 server.get('/heartbeat', (req, res) => {
   res.json({ message: 'heartbeat' });
@@ -97,6 +98,10 @@ server.get('*', (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+server.get('*', (req, res) => {
+    res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
+  });
+
 
 server.listen(PORT, () => {
   console.log(`This server is running at PORT ${PORT}`);
