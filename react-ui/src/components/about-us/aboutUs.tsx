@@ -8,10 +8,10 @@ const AboutUs = (): JSX.Element => {
         <Container>
         <TitleText>
             <h1>Our Team</h1>
-         </TitleText>
-         <Profiles>
+        </TitleText>
+        <Profiles>
             <Team />
-         </Profiles>
+        </Profiles>
         </Container>
     )
 };
