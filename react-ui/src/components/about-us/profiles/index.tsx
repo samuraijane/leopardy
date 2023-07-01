@@ -20,7 +20,7 @@ const Team  = (): JSX.Element => {
     return (
         <Container>
             <AboutDiv>
-                <AboutImg src={profile.filename} alt={profile.alt} />
+                <AboutImg src={`${profile.filename}`} alt={profile.alt} />
                 <AboutName>{profile.name}</AboutName>
                 <AboutTitle>{profile.title}</AboutTitle>
                 <AboutP> 

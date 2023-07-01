@@ -8,7 +8,6 @@ const AboutUs = (): JSX.Element => {
         <Container>
         <TitleText>
             <h1>Our Team</h1>
-            <p>This is a subheading about the project</p>
          </TitleText>
          <Profiles>
             <Team />
