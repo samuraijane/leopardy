@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Team from '../../components/about-us/profiles/index'
+import Team from '../../components/about-us/profiles/index';
 
 const AboutUs = (): JSX.Element => {
 
