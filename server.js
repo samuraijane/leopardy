@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 
 const cookieParser = require('cookie-parser');
 const pgp = require('pg-promise')();
@@ -14,6 +15,7 @@ const db = pgp(process.env.URL);
 server.use(cors());
 server.use(express.json());
 server.use(cookieParser());
+server.use(express.static(path.resolve(`${__dirname}/react-ui/build`)));
 
 server.get('/heartbeat', (req, res) => {
   res.json({ message: 'heartbeat' });
@@ -83,6 +85,12 @@ server.post('/signin', async (req, res) => {
     if (!isPasswordValid) {
       return res.status(401).json({ error: 'Invalid username or password' });
     }
+    res.json({message:"heartbeat"})
+
+server.get('*', (req, res) => {
+    res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
+  });
+  
 
     res.json({ message: 'Sign-in successful' });
   } catch (error) {
@@ -90,6 +98,10 @@ server.post('/signin', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+server.get('*', (req, res) => {
+    res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
+  });
+
 
 server.listen(PORT, () => {
   console.log(`This server is running at PORT ${PORT}`);
