@@ -2,46 +2,55 @@
     {
       "href": "/sign-up",
       "id": 102,
+      "isPrivate":false,
       "name": "Sign-Up"
     },
     {
       "href": "/sign-in",
       "id": 103,
+      "isPrivate":false,
       "name": "Sign In"
     } ,
     {
       "href": "/about-us",
       "id": 104,
+      "isPrivate":false,
       "name": "About Us"
     },
     {
       "href": "/rules",
       "id": 105,
+      "isPrivate":false,
       "name": "Rules"
     },
     {
       "href": "/feedback",
       "id": 106,
+      "isPrivate": true,
       "name": "Feedback"
     },
     {
       "href": "/account",
       "id": 107,
+      "isPrivate": true,
       "name": "Account"
     },
     {
       "href": "/create-game",
       "id": 108,
+      "isPrivate": true,
       "name": "Create Game"
     },
     {
       "href": "/play",
       "id": 109,
+      "isPrivate":true,
       "name": "Play"
     },
     {
       "href": "/support",
       "id": 110,
+      "isPrivate":true,
       "name": "Support"
     }
     
