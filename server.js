@@ -141,7 +141,6 @@ server.post('/questions', async (req, res) => {
   }
 });
 
-// Start the server
 server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
 });
