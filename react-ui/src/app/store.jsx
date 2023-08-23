@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import isLoggedInSlice from "../feature/isLoggedInSlice"
+import isLoggedInSlice from "../feature/isLoggedInSlice.jsx"
 
 export default configureStore({
     reducer: {
