@@ -6,8 +6,19 @@ import logo from "../navs/home.json";
 const Header = () => {
   console.log(logo[0].src)
   const home = logo.map(logo => <NavLink key={logo.href} to={logo.href}><img src={logo.src} /> </NavLink>);
-  const navs = data.map(nav => <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>);
   
+  const navs = data
+    .map( nav => {
+      if(isLoggedIn === true) {
+        return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
+      } else {
+        if(nav.name === "Account") {
+          return 
+        } else {
+          return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
+        }
+        }
+    });
   return (
     <header>
       <div className='y-wrap y-navs'>{home}{navs}</div>
