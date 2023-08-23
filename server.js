@@ -141,6 +141,18 @@ server.post('/questions', async (req, res) => {
   }
 });
 
+
+server.get('/games', async (req, res) => {
+  try {
+    const games = await db.any('SELECT * FROM games');
+    res.json(games);
+  } catch (error) {
+    console.error('Error retrieving games:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
 });
