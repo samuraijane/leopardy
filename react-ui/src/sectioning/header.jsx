@@ -12,7 +12,7 @@ const Header = () => {
       if(isLoggedIn === true) {
         return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
       } else {
-        if(nav.name === "Account") {
+        if(nav.name === "Account" && nav.name === "Feedback" && nav.name === "Create Game" && nav.name === "Play" && nav.name === "Support") {
           return 
         } else {
           return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
