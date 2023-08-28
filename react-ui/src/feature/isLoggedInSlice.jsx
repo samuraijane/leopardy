@@ -25,7 +25,7 @@ export const verifyAuth = createAsyncThunk('/signup', async ({username, email, p
 
 export const isLoggedInSlice = createSlice({
     name: "isLoggedIn",
-    initialState: false,
+    initialState: null,
     reducers: {},
     extraReducers(builder) {
         builder.addCase(verifyAuth.fulfilled, (state, action) => {

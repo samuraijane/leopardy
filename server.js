@@ -60,48 +60,70 @@ server.post('/signup', async (req, res) => {
       [id, email, first_name, last_name, username, avatar_url, hashedPassword]
     );
 
-    res.json({ message: 'User created successfully' });
+    res.json({
+      message: 'User created successfully',
+      username: username,
+      isAuthenticated: true,
+    });
   } catch (error) {
     console.error('Error creating user:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
-server.post('/signin', async (req, res) => {
-  const { username, password } = req.body;
+server.use(
+  session({
+    cookie: {
+      secure: false,
+      maxAge: 86400,
+    },
+    resave: false,
+    saveUninitialized: true,
+    secret: 'pancake',
+  })
+);
 
-  try {
-    // Retrieve the user from the database
-    const user = await db.oneOrNone(
-      'SELECT * FROM users WHERE username = $1',
-      username
-    );
-    if (!user) {
-      return res.status(401).json({ error: 'Invalid username or password' });
+server.get('/api/verifyAuth', (req, res) => {
+  console.log(req.session)
+  res.json({ isAuthenticated: !!req.session.user });
+}),
+  server.post('/signin', async (req, res) => {
+    const { username, password } = req.body;
+
+    try {
+      // Retrieve the user from the database
+      const user = await db.oneOrNone(
+        'SELECT * FROM users WHERE username = $1',
+        username
+      );
+      if (!user) {
+        return res.status(401).json({ error: 'Invalid username or password' });
+      }
+
+      // Compare the provided password with the hashed password
+      const isPasswordValid = await bcrypt.compare(password, user.password);
+      if (!isPasswordValid) {
+        return res.status(401).json({ error: 'Invalid username or password' });
+      }
+      res.json({ message: 'heartbeat' });
+
+      server.get('*', (req, res) => {
+        res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
+      });
+
+      res.json({
+        message: 'Sign-in successful',
+        username: username,
+        isAuthenticated: !!req.session.user,
+      });
+    } catch (error) {
+      console.error('Error signing in:', error);
+      res.status(500).json({ error: 'Internal server error' });
     }
-
-    // Compare the provided password with the hashed password
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-    if (!isPasswordValid) {
-      return res.status(401).json({ error: 'Invalid username or password' });
-    }
-    res.json({message:"heartbeat"})
-
-server.get('*', (req, res) => {
-    res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
   });
-  
-
-    res.json({ message: 'Sign-in successful' });
-  } catch (error) {
-    console.error('Error signing in:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
+server.get('*', (req, res) => {
+  res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
 });
-server.get('*', (req, res) => {
-    res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
-  });
-
 
 server.get('/categories', async (req, res) => {
   try {
