@@ -152,7 +152,6 @@ server.get('/games', async (req, res) => {
   }
 });
 
-
 server.post('/games', async (req, res) => {
   const { category_id1, category_id2, category_id3, category_id4, category_id5, category_id6, finalquestion, finalanswer } = req.body;
 
@@ -167,7 +166,6 @@ server.post('/games', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
-
 
 server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
