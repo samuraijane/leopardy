@@ -2,21 +2,36 @@
 //  Media Queries
 //----------------------------------------------------------------------------
 @mixin _mq($size) {
-    @if       $size == xsmall       { @media only screen and (min-width: 360px)  { @content; } }
-    @else if  $size == small        { @media only screen and (min-width: 576px)  { @content; } }
-    @else if  $size == intermediate { @media only screen and (min-width: 768px)  { @content; } }
-    @else if  $size == large        { @media only screen and (min-width: 992px)  { @content; } }
-    @else if  $size == xlarge       { @media only screen and (min-width: 1200px) { @content; } }
+  @if $size == xsmall {
+    @media only screen and (min-width: 360px) {
+      @content;
+    }
+  } @else if $size == small {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $size == intermediate {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == large {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $size == xlarge {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
   }
-  
-  //----------------------------------------------------------------------------
-  //  BODY FONTS
-  //----------------------------------------------------------------------------
-  @mixin _bodyFont($color: inherit) {
-    color: $color;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: $regular;
-    line-height: 16.8px;
-  }
-  
+}
+
+//----------------------------------------------------------------------------
+//  BODY FONTS
+//----------------------------------------------------------------------------
+@mixin _bodyFont($color: inherit) {
+  color: $color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 16.8px;
+}

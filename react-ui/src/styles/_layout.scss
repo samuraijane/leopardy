@@ -1,1 +1,19 @@
 // all layout styles should be prefixed with `y-`
+
+.y-wrap {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.y-navs {
+    display: flex;
+    align-items: center;
+}
+
+.y-navs a:first-of-type {
+    flex: 1;
+}
+
+.y-navs a:not(:first-of-type) {
+    margin: 0 0 0 16px;
+}

@@ -10,33 +10,33 @@
           "questions": [
             {
               "id": "1-1-1",
-              "question": "Which famous rock and roll artist released the hit song \"Rock Around the Clock\" in 1954?",
+              "question": "The famous rock and roll artist released the hit song \"Rock Around the Clock\" in 1954?",
               "level": "easy",
-              "answer": "Bill Haley & His Comets"
+              "answer": "Who is Bill Haley & His Comets?"
             },
             {
               "id": "1-1-2",
-              "question": "Which historic Supreme Court case declared racial segregation in public schools unconstitutional?",
+              "question": "This historic Supreme Court case declared racial segregation in public schools unconstitutional?",
               "level": "medium",
-              "answer": "Brown v. Board of Education"
+              "answer": "What is Brown v. Board of Education?"
             },
             {
               "id": "1-1-3",
-              "question": "Who was the leader of the Soviet Union during the majority of the 1950s?",
+              "question": "The leader of the Soviet Union during the majority of the 1950s was?",
               "level": "easy",
-              "answer": "Nikita Khrushchev"
+              "answer": "Who is Nikita Khrushchev?"
             },
             {
               "id": "1-1-4",
-              "question": "Which popular television show premiered in 1951 and featured Lucille Ball?",
+              "question": "The popular television show premiered in 1951 and featured Lucille Ball?",
               "level": "medium",
-              "answer": "I Love Lucy"
+              "answer": "What is I Love Lucy?"
             },
             {
               "id": "1-1-5",
-              "question": "What was the name of the famous bus boycott that took place in Montgomery, Alabama, in 1955?",
+              "question": "The name of the famous bus boycott that took place in Montgomery, Alabama, in 1955 was?",
               "level": "hard",
-              "answer": "Montgomery Bus Boycott"
+              "answer": "What is Montgomery Bus Boycott?"
             }
           ]
         },
@@ -46,33 +46,33 @@
           "questions": [
             {
               "id": "2-2-1",
-              "question": "Who won the Best Picture at the Academy Awards in 1960?",
+              "question": "The winner of the Best Picture at the Academy Awards in 1960 is ",
               "level": "easy",
-              "answer": "The Apartment"
+              "answer": "What is The Apartment?"
             },
             {
               "id": "2-2-2",
-              "question": "What was the name of the military conflict that the United States was involved in during the 1960s and 1970s?",
+              "question": "The military conflict that the United States was involved in during the 1960s and 1970s is ",
               "level": "hard",
-              "answer": "Vietnam War"
+              "answer": "What is the Vietnam War?"
             },
             {
               "id": "2-2-3",
-              "question": "Who was the first man to walk on the moon?",
+              "question": "The first man to walk on the moon is ",
               "level": "easy",
-              "answer": "Neil Armstrong"
+              "answer": "Who is Neil Armstrong?"
             },
             {
               "id": "2-2-4",
-              "question": "Which famous music festival took place in upstate New York in 1969?",
+              "question": "This famous music festival took place in upstate New York in 1969?",
               "level": "medium",
-              "answer": "Woodstock"
+              "answer": "What is Woodstock?"
             },
             {
               "id": "2-2-5",
-              "question": "Which political leader was assassinated in Dallas, Texas, in 1963?",
+              "question": "This political leader was assassinated in Dallas, Texas, in 1963?",
               "level": "medium",
-              "answer": "John F. Kennedy"
+              "answer": "Who is John F. Kennedy?"
             }
           ]
         },
@@ -82,33 +82,33 @@
           "questions": [
             {
               "id": "3-3-1",
-              "question": "Which actor played the iconic character Rocky Balboa in the film \"Rocky\" released in 1976?",
+              "question": "This actor played the iconic character Rocky Balboa in the film \"Rocky\" released in 1976?",
               "level": "easy",
-              "answer": "Sylvester Stallone"
+              "answer": "Who is Sylvester Stallone?"
             },
             {
               "id": "3-3-2",
-              "question": "What was the highest-grossing film of the 1970s?",
+              "question": "This movie was the highest-grossing film of the 1970s?",
               "level": "medium",
-              "answer": "Star Wars"
+              "answer": "What is Star Wars?"
             },
             {
               "id": "3-3-3",
-              "question": "Which American president resigned from office in 1974?",
+              "question": "This American president resigned from office in 1974?",
               "level": "medium",
-              "answer": "Richard Nixon"
+              "answer": "Who is Richard Nixon?"
             },
             {
               "id": "3-3-4",
-              "question": "Which American serial killer terrorized California in the late 1960s and early 1970s?",
+              "question": "This American serial killer terrorized California in the late 1960s and early 1970s?",
               "level": "hard",
-              "answer": "The Zodiac Killer"
+              "answer": "Who is the Zodiac Killer?"
             },
             {
               "id": "3-3-5",
-              "question": "Which disco hit by the Bee Gees was featured in the film \"Saturday Night Fever\" released in 1977?",
+              "question": "This disco hit by the Bee Gees was featured in the film \"Saturday Night Fever\" released in 1977?",
               "level": "easy",
-              "answer": "Stayin' Alive"
+              "answer": "What is Stayin' Alive?"
             }
           ]
         },
@@ -118,33 +118,33 @@
           "questions": [
             {
               "id": "4-4-1",
-              "question": "Who was the first female British Prime Minister?",
+              "question": "The first female British Prime Minister was?",
               "level": "easy",
-              "answer": "Margaret Thatcher"
+              "answer": "Who is Margaret Thatcher?"
             },
             {
               "id": "4-4-2",
-              "question": "Which iconic handheld gaming device was released by Nintendo in 1989?",
+              "question": "This iconic handheld gaming device was released by Nintendo in 1989?",
               "level": "easy",
-              "answer": "Game Boy"
+              "answer": "What is Game Boy?"
             },
             {
               "id": "4-4-3",
-              "question": "What was the highest-grossing film of the 1980s?",
+              "question": "The highest-grossing film of the 1980s was?",
               "level": "medium",
-              "answer": "E.T. the Extra-Terrestrial"
+              "answer": "What is E.T. the Extra-Terrestrial?"
             },
             {
               "id": "4-4-4",
-              "question": "Which famous album by Michael Jackson was released in 1982?",
+              "question": "This famous album by Michael Jackson was released in 1982?",
               "level": "medium",
-              "answer": "Thriller"
+              "answer": "What is Thriller?"
             },
             {
               "id": "4-4-5",
-              "question": "What was the popular dance style that emerged in the 1980s known for its robotic movements?",
+              "question": "This popular dance style that emerged in the 1980s is known for its robotic movements?",
               "level": "hard",
-              "answer": "Breakdancing"
+              "answer": "What is Breakdancing?"
             }
           ]
         },
@@ -154,33 +154,33 @@
           "questions": [
             {
               "id": "5-5-1",
-              "question": "Which popular sitcom featured six friends living in New York City?",
+              "question": " This popular sitcom featured six friends living in New York City?",
               "level": "easy",
-              "answer": "Friends"
+              "answer": "What is Friends?"
             },
             {
               "id": "5-5-2",
-              "question": "Which female artist released the hit song \"Baby One More Time\" in 1998?",
+              "question": "This female artist released the hit song \"Baby One More Time\" in 1998?",
               "level": "easy",
-              "answer": "Britney Spears"
+              "answer": "Who is Britney Spears?"
             },
             {
               "id": "5-5-3",
-              "question": "What was the name of the highest-grossing animated film of the 1990s?",
+              "question": "The name of the highest-grossing animated film of the 1990s is?",
               "level": "medium",
-              "answer": "The Lion King"
+              "answer": "What is The Lion King?"
             },
             {
               "id": "5-5-4",
-              "question": "Which American president signed the North American Free Trade Agreement (NAFTA) into law in 1993?",
+              "question": "The American president who signed the North American Free Trade Agreement (NAFTA) into law in 1993 is?",
               "level": "medium",
-              "answer": "Bill Clinton"
+              "answer": "Who is Bill Clinton?"
             },
             {
               "id": "5-5-5",
-              "question": "What was the name of the conflict between Iraq and a coalition led by the United States in the early 1990s?",
+              "question": "The conflict between Iraq and a coalition led by the United States in the early 1990s is?",
               "level": "hard",
-              "answer": "Gulf War"
+              "answer": "What is the Gulf War?"
             }
           ]
         },
@@ -190,33 +190,33 @@
           "questions": [
             {
               "id": "6-6-1",
-              "question": "Which social media platform was founded by Mark Zuckerberg in 2004?",
+              "question": "This social media platform was founded by Mark Zuckerberg in 2004?",
               "level": "easy",
-              "answer": "Facebook"
+              "answer": "What is Facebook?"
             },
             {
               "id": "6-6-2",
-              "question": "What was the name of the first smartphone released by Apple in 2007?",
+              "question": "The name of the first smartphone released by Apple in 2007 is?",
               "level": "medium",
-              "answer": "iPhone"
+              "answer": "What is the iPhone?"
             },
             {
               "id": "6-6-3",
-              "question": "Who won the Academy Award for Best Actor for his role in the film \"Ray\" released in 2004?",
+              "question": "The Academy Award for Best Actor winner for his role in the film \"Ray\"released in 2004 is?",
               "level": "medium",
-              "answer": "Jamie Foxx"
+              "answer": "Who is Jamie Foxx?"
             },
             {
               "id": "6-6-4",
-              "question": "Which country hosted the 2008 Summer Olympics?",
+              "question": "This country hosted the 2008 Summer Olympics?",
               "level": "easy",
-              "answer": "China"
+              "answer": "What is China?"
             },
             {
               "id": "6-6-5",
-              "question": "Which catastrophic hurricane struck the Gulf Coast of the United States in 2005?",
+              "question": "This catastrophic hurricane struck the Gulf Coast of the United States in 2005?",
               "level": "hard",
-              "answer": "Hurricane Katrina"
+              "answer": "What is Hurricane Katrina?"
             }
           ]
         }
