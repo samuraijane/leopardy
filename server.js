@@ -152,6 +152,20 @@ server.get('/games', async (req, res) => {
   }
 });
 
+server.post('/games', async (req, res) => {
+  const { category_id1, category_id2, category_id3, category_id4, category_id5, category_id6, finalquestion, finalanswer } = req.body;
+
+  try {
+    await db.none(
+      'INSERT INTO games (category_id1, category_id2, category_id3, category_id4, category_id5, category_id6, finalquestion, finalanswer) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
+      [category_id1, category_id2, category_id3, category_id4, category_id5, category_id6, finalquestion, finalanswer]
+    );
+    res.json({ message: 'Game created successfully' });
+  } catch (error) {
+    console.error('Error creating game:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 server.listen(PORT, async () => {
   console.log(`This server is running at PORT ${PORT}`);
