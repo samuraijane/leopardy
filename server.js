@@ -102,7 +102,6 @@ server.get('*', (req, res) => {
     res.sendFile(path.resolve(`${__dirname}/react-ui/build/index.html`));
   });
 
-
 server.get('/categories', async (req, res) => {
   try {
     const categories = await db.any('SELECT * FROM categories');
